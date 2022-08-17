@@ -1,7 +1,7 @@
-# <a name="top"></a>README TITLE
+# <a name="top"></a>Beer Analysis: Can we predict a good beer?
 ![]()
 
-by: Matthew Dalton
+by: Luis Arce
 
 <p>
   <a href="https://github.com/mdalton87" target="_blank">
@@ -12,6 +12,7 @@ by: Matthew Dalton
 
 ***
 [[Project Description](#project_description)]
+
 [[Project Planning](#planning)]
 [[Key Findings](#findings)]
 [[Data Dictionary](#dictionary)]
@@ -66,13 +67,19 @@ ___
 ### Data Used
 ---
 | Attribute | Definition | Data Type |
-| ----- | ----- | ----- |
-| | | |
-| | | |
-| | | |
-| | | |
-| | | |
-| | | |
+ 0   brewery_id          Unique brewery ID int64  
+ 1   brewery_name        Name  object 
+ 2   review_time         How long it took to review  int64  
+ 3   review_overall      review attribute  float64
+ 4   review_aroma        review attribute  float64
+ 5   review_appearance   review attribute  float64
+ 6   review_profilename  review attribute  object 
+ 7   beer_style          type of beer  object 
+ 8   review_palate       review attribute  float64
+ 9   review_taste        review attribute  float64
+ 10  beer_name           self explantory  object 
+ 11  beer_abv            alcohol by volume  float64
+ 12  beer_beerid         unqiue beer id  int64 
 
 ***
 
