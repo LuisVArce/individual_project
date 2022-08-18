@@ -209,6 +209,13 @@ To run the ANOVA test in Python use the following import: \
 
 #### Summary:
 
+### To Reconstruct this Project
+You'll require own env.py file to store query connection credentials(access rights to CodeUp SQL is required).
+Read this ReadMe.md file fully and make necessary files
+Set up .gitignore file and ignore env.py, *.csv files
+Create and Repository directory on GitHub.com
+Follow instructions above and run the final zillow_workspace report.
+
 ***
 
 ## <a name="model"></a>Modeling:
