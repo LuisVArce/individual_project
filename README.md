@@ -168,8 +168,15 @@ To run the ANOVA test in Python use the following import: \
     - The p_vlaue is the probability of obtaining test results at least as extreme as the results actually observed, under the assumption that the null hypothesis is correct
 
 #### Hypothesis:
-- The null hypothesis (H<sub>0</sub>) is
-- The alternate hypothesis (H<sub>1</sub>) is 
+- Null Hypothesis: review_taste is independent of review_overall.
+- Alternate Hypothesis: review_taste is correlated with review_overall.
+
+- Null Hypothesis = There is no relationship between beer_abv and review_overall
+- Alternative Hypothesis = There is a relationship with beer_abv and review_overall
+
+- Null Hypothesis: The mean of review_taste is equal to review_palate.
+- Alternate Hypothesis: The mean of review_taste is significantly different than review_palate.
+
 
 #### Confidence level and alpha value:
 - I established a 95% confidence level
@@ -182,22 +189,11 @@ To run the ANOVA test in Python use the following import: \
 #### Summary:
 
 
-### Stats Test 2: T-Test: One Sample, Two Tailed
-- A T-test allows me to compare a categorical and a continuous variable by comparing the mean of the continuous variable by subgroups based on the categorical variable
-- The t-test returns the t-statistic and the p-value:
-    - t-statistic: 
-        - Is the ratio of the departure of the estimated value of a parameter from its hypothesized value to its standard error. It is used in hypothesis testing via Student's t-test. 
-        - It is used in a t-test to determine if you should support or reject the null hypothesis
-        - t-statistic of 0 = H<sub>0</sub>
-    -  - the p-value:
-        - The probability of obtaining test results at least as extreme as the results actually observed, under the assumption that the null hypothesis is correct
-- We wanted to compare the individual clusters to the total population. 
-    - Cluster1 to the mean of ALL clusters
-    - Cluster2 to the mean of ALL clusters, etc.
+### Statistical test used:
+- Pearson's Correlation
+- Spearmans Correlation
+- Two-Tailed T-test
 
-#### Hypothesis:
-- The null hypothesis (H<sub>0</sub>) is 
-- The alternate hypothesis (H<sub>1</sub>) is 
 
 #### Confidence level and alpha value:
 - I established a 95% confidence level and in one stats test, a 99$ confidence level.
@@ -226,6 +222,8 @@ Follow instructions above and run the final zillow_workspace report.
 ### Baseline
     
 - Baseline Results: 3.815
+- Baseline RMSE using mean: .71
+- Baseline RMSE usine median: .73
     
 
 - Selected features to input into models:
@@ -237,6 +235,9 @@ Follow instructions above and run the final zillow_workspace report.
 
 ### Models and R<sup>2</sup> Values:
 - Will run the following regression models:
+- OLS Regression
+- Lasso + Lars
+- GLM using Tweedie
 
     
 
@@ -248,45 +249,38 @@ Follow instructions above and run the final zillow_workspace report.
 
 
 - Model 1 results:
+RMSE for OLS using LinearRegression
 
+- Training/In-Sample: 0
+- Validation/Out-of-Sample: 0.409688650223883
 
 
 ### Model 2 : Lasso Lars Model
 
 
 - Model 2 results:
+RMSE for Lasso + Lars
 
+- Training/In-Sample: 0.5838810630246742
+- Validation/Out-of-Sample: 0.7131881375527451
 
 ### Model 3 : Tweedie Regressor (GLM)
 
 - Model 3 results:
+RMSE for GLM using Tweedie, power=1 & alpha=0
 
-
-### Model 4: Quadratic Regression Model
-
-- Model 4 results:
-
-
-## Selecting the Best Model:
-
-### Use Table below as a template for all Modeling results for easy comparison:
-
-| Model | Validation/Out of Sample RMSE | R<sup>2</sup> Value |
-| ---- | ----| ---- |
-| Baseline | 0.167366 | 2.2204 x 10<sup>-16</sup> |
-| Linear Regression (OLS) | 0.166731 | 2.1433 x 10<sup>-3</sup> |  
-| Tweedie Regressor (GLM) | 0.155186 | 9.4673 x 10<sup>-4</sup>|  
-| Lasso Lars | 0.166731 | 2.2204 x 10<sup>-16</sup> |  
-| Quadratic Regression | 0.027786 | 2.4659 x 10<sup>-3</sup> |  
+- Training/In-Sample: 0.07554060365014124
+- Validation/Out-of-Sample: 0.4236598025095658
 
 
 - {} model performed the best
-
+GLM with Tweedie
 
 ## Testing the Model
 
 - Model Testing Results
-
+- RMSE for OLS Model using LinearRegression
+- Out-of-Sample Performance:  0.42258894982438566
 ***
 
 ## <a name="conclusion"></a>Conclusion:
