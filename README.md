@@ -100,7 +100,9 @@ Final notebook and README
 ## <a name="findings"></a>Key Findings:
 [[Back to top](#top)]
 
+My original hypothesis was that beer_abv (abv = alcohol by volume. Basically, how much booze is in a drink) would have an affect on a beer’s review_overall. It turns out that it has little to no connection to a final beer’s score.
 
+In order - taste, palate, aroma and appearance all have an influence on a beer’s overall review score.
 
 
 ***
