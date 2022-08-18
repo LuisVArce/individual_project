@@ -6,6 +6,8 @@ by: Luis Arce
 
 
 ***
+## Executive Summary
+
 [[Project Description](#project_description)]
 
 With more breweries than ever in America, it is more important than ever to have your product standout. I’ve been provided a dataset with 12 continuous and categorical features. The features supplied are descriptive features of beers provided by beer reviewers. I will analyze this dataset to see if we can provide a beer producer with attributes that they should focus on in order to receive a high overall beer score. Beer production is both a science and an artform and a beers final attribute can be manipulated in many ways.
