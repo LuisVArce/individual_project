@@ -155,7 +155,7 @@ To run the ANOVA test in Python use the following import: \
 - The alternate hypothesis (H<sub>1</sub>) is 
 
 #### Confidence level and alpha value:
-- I established a 95% confidence level
+- I established a 95% confidence level and in one stats test, a 99$ confidence level.
 - alpha = 1 - confidence, therefore alpha is 0.05
 
 
@@ -173,11 +173,13 @@ To run the ANOVA test in Python use the following import: \
 
 ### Baseline
     
-- Baseline Results: 
+- Baseline Results: 3.815
     
 
 - Selected features to input into models:
-    - features = []
+    - features = [brewery_id', 'brewery_name', 'review_overall', 'review_aroma',
+       'review_appearance', 'beer_style', 'review_palate', 'review_taste',
+       'beer_name', 'beer_abv']
 
 ***
 
