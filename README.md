@@ -3,11 +3,6 @@
 
 by: Luis Arce
 
-<p>
-  <a href="https://github.com/mdalton87" target="_blank">
-    <img alt="Matthew" src="https://img.shields.io/github/followers/mdalton87?label=Follow_Matt&style=social" />
-  </a>
-</p>
 
 
 ***
@@ -289,5 +284,7 @@ To run the ANOVA test in Python use the following import: \
 
 ## <a name="conclusion"></a>Conclusion:
 [[Back to top](#top)]
-![image](https://user-images.githubusercontent.com/105242963/185395440-c9256eb1-c636-4904-8d9e-c70edac2111d.png)
+Beer’s overall high score is determined by the beer’s taste, palate, aroma and appearance. Beer abv has little to do with a positive review. If there was more time, I would perform a clustering model to see if we can predict a beers missing abv by its beer type. Also, it would be useful to have a brewery ID key in order to determine where the beers are from. Sales data would help to determine what styles of beers sell more and where they sell more.
+
+My recommendation is to focus on the taste of a beer with paying special attention to its aroma as well. Beer abv is of little relevance to a beers actual taste and should be disregarded for the most part.
 
